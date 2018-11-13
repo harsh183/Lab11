@@ -4,7 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="bottom|center"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/addressTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address:" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        android:text="Area 51, Nevada United States" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_ip_box"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:hint="Crush's ip"
+        android:textColorHint="@android:color/black"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/input_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Crush's ip"
+            android:inputType="text"
+            android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/lookup_ip"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="onClick"
+        android:text="Stalk" />
+
+
 
 </LinearLayout>
